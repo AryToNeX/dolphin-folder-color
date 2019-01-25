@@ -25,15 +25,15 @@ unset GREP_OPTIONS
 declare colors=(default black brown cyan blue grey green magenta orange red yellow violet)
 
 declare symbols=( \
-    default      activities  apple     copy-cloud desktop  \
-    development  documents   download  downloads  drive    \
-    dropbox      favorites   games     git        gnome    \
-    image-people important   java      linux      locked   \
-    mail         mail-cloud  mega      meocloud   music    \
-    network      owncloud    photo     pictures   print    \
-    private      public      recent    remote     script   \
-    steam        tar         templates unlocked   vbox     \
-    video        videos      visiting  wifi       wine     \
+    default      activities  apple     copy-cloud desktop      \
+    development  documents   download  downloads  google-drive \
+    dropbox      favorites   games     git        gnome        \
+    image-people important   java      linux      locked       \
+    mail         mail-cloud  mega      meocloud   music        \
+    network      owncloud    photo     pictures   print        \
+    private      public      recent    remote     script       \
+    steam        tar         templates unlocked   vbox         \
+    video        videos      visiting  wifi       wine         \
     yandex-disk
 )
 
@@ -61,15 +61,15 @@ showHelp() {
     -c <color>      default black brown cyan grey green magenta orange red yellow violet
 
 
-    -s <symbol>     default      activities  apple     copy-cloud desktop 
-                    development  documents   download  downloads  drive   
-                    dropbox      favorites   games     git        gnome   
-                    image-people important   java      linux      locked  
-                    mail         mail-cloud  mega      meocloud   music   
-                    network      owncloud    photo     pictures   print   
-                    private      public      recent    remote     script  
-                    steam        tar         templates unlocked   vbox  
-                    video        videos      visiting  wifi       wine         
+    -s <symbol>     default      activities  apple     copy-cloud desktop
+                    development  documents   download  downloads  google-drive
+                    dropbox      favorites   games     git        gnome
+                    image-people important   java      linux      locked
+                    mail         mail-cloud  mega      meocloud   music
+                    network      owncloud    photo     pictures   print
+                    private      public      recent    remote     script
+                    steam        tar         templates unlocked   vbox
+                    video        videos      visiting  wifi       wine
                     yandex-disk
                     
     -i              <icon|path> Path of the icon or a name of icon.
