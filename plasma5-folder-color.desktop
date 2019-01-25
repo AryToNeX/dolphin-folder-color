@@ -2,8 +2,8 @@
 Name=Folder Color
 
 Encoding=UTF-8
-Version=2.0
-Icon=colors-chromablue
+Version=2.0.1-AryToNeX
+Icon=colors-luma
 Type=Service
 ServiceTypes=KonqPopupMenu/Plugin
 MimeType=inode/directory;
@@ -31,7 +31,7 @@ Name[pt_BR]=Ícone personalizado
 Name[de]=Custom Icon
 Name[pl]=Personalizacja ikon
 Name[ru]=Пользовательская иконка
-Icon=colors-chromared
+Icon=colors-luma
 Exec=dolphin-folder-color -o %U
 
 [Desktop Action random-icon]
@@ -44,6 +44,7 @@ Name[pt_BR]=Aleatória
 Name[de]=Zufällig
 Name[pl]=Losowy
 Name[ru]=Произвольный цвет
+Icon=randomize
 Exec=dolphin-folder-color -r %U
 
 #########################################
