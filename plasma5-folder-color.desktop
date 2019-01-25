@@ -11,7 +11,7 @@ MimeType=inode/directory;
 X-KDE-Submenu=Folder Color
 X-KDE-Submenu[es]=Color
 X-KDE-Submenu[fr]=Dossier de couleur
-X-KDE-Submenu[it]=Cartella colori
+X-KDE-Submenu[it]=Colore cartella
 X-KDE-Submenu[pt]=Pasta Cor
 X-KDE-Submenu[pt_BR]=Cor da pasta
 X-KDE-Submenu[de]=Farbe Ordner
@@ -19,13 +19,13 @@ X-KDE-Submenu[pl]=Kolor katalogu
 X-KDE-Submenu[ru]=Цвет папки
 X-KDE-Priority=TopLevel
 
-Actions=custom-icon;random-icon;_SEPARATOR_;default;cyan;blue;green;yellow;orange;red;magenta;violet;brown;grey;black;_SEPARATOR_;user-home;documents;download;pictures;music;videos;development;favorites;
+Actions=custom-icon;random-icon;_SEPARATOR_;default;cyan;blue;green;yellow;orange;red;magenta;violet;brown;grey;black;_SEPARATOR_;documents;download;pictures;music;videos;development;favorites;activities;apple;copy-cloud;desktop;drive;dropbox;games;git;gnome;image-people;important;java;linux;locked;mail;mail-cloud;mega;meocloud;network;owncloud;print;private;public;recent;remote;script;steam;tar;templates;unlocked;vbox;visiting;wifi;wine;yandex-disk
 
 [Desktop Action custom-icon]
 Name=Custom icon
 Name[es]=Icono personalizado
 Name[fr]=Icône personnalisée
-Name[it]=Icona Personalizzata
+Name[it]=Icona personalizzata
 Name[pt]=Ícone personalizado
 Name[pt_BR]=Ícone personalizado
 Name[de]=Custom Icon
@@ -38,7 +38,7 @@ Exec=dolphin-folder-color -o %U
 Name=Random
 Name[es]=Aleatorio
 Name[fr]=aleatória
-Name[it]=Casuale
+Name[it]=Icona casuale
 Name[pt]=Aleatória
 Name[pt_BR]=Aleatória
 Name[de]=Zufällig
@@ -52,7 +52,7 @@ Exec=dolphin-folder-color -r %U
 Name=Default
 Name[es]=Predeterminado
 Name[fr]=Défaut
-Name[it]=Difetto
+Name[it]=Icona predefinita
 Name[pt]=Omissão
 Name[pt_BR]=Padrão
 Name[de]=Default
@@ -206,24 +206,11 @@ Exec=dolphin-folder-color -c black %U
 
 #########################################
 
-[Desktop Action user-home]
-Name=Home
-Name[es]=Home
-Name[fr]=Home
-Name[it]=Home
-Name[pt]=Home
-Name[pt_BR]=Home
-Name[de]=Home
-Name[pl]=Katalog domowy
-Name[ru]=Домашняя папка
-Icon=folder-user-home
-Exec=dolphin-folder-color -s desktop %U
-
 [Desktop Action documents]
 Name=Documents
 Name[es]=Documentos
 Name[fr]=Documents
-Name[it]=Documentazione
+Name[it]=Documenti
 Name[pt]=Documentos
 Name[pt_BR]=Documentos
 Name[de]=Unterlagen
@@ -262,7 +249,7 @@ Exec=dolphin-folder-color -s pictures %U
 Name=Sound
 Name[es]=Sonido
 Name[fr]=Son
-Name[it]=Suono
+Name[it]=Musica
 Name[pt]=Parecer
 Name[pt_BR]=Áudio
 Name[de]=Klingen
@@ -309,3 +296,193 @@ Name[pl]=Ulubione
 Name[ru]=Избранное
 Icon=folder-favorites
 Exec=dolphin-folder-color -s favorites %U
+
+###################################### ADDED
+
+[Desktop Action activities]
+Name=Activities
+Name[it]=Attività
+Icon=folder-activities
+Exec=dolphin-folder-color -s activities %U
+
+[Desktop Action apple]
+Name=Apple
+Icon=folder-apple
+Exec=dolphin-folder-color -s apple %U
+
+[Desktop Action copy-cloud]
+Name=CopyCloud
+Icon=folder-copy-cloud
+Exec=dolphin-folder-color -s copy-cloud %U
+
+[Desktop Action desktop]
+Name=Desktop
+Icon=folder-desktop
+Exec=dolphin-folder-color -s desktop %U
+
+[Desktop Action drive]
+Name=Google Drive
+Icon=folder-google-drive
+Exec=dolphin-folder-color -s google-drive %U
+
+[Desktop Action dropbox]
+Name=Dropbox
+Icon=folder-dropbox
+Exec=dolphin-folder-color -s dropbox %U
+
+[Desktop Action games]
+Name=Games
+Name[it]=Giochi
+Icon=folder-games
+Exec=dolphin-folder-color -s games %U
+
+[Desktop Action git]
+Name=Git
+Icon=folder-git
+Exec=dolphin-folder-color -s git %U
+
+[Desktop Action gnome]
+Name=Gnome
+Icon=folder-gnome
+Exec=dolphin-folder-color -s gnome %U
+
+[Desktop Action image-people]
+Name=ImagePeople
+Icon=folder-image-people
+Exec=dolphin-folder-color -s image-people %U
+
+[Desktop Action important]
+Name=Important
+Name[it]=Importante
+Icon=folder-important
+Exec=dolphin-folder-color -s important %U
+
+[Desktop Action java]
+Name=Java
+Icon=folder-java
+Exec=dolphin-folder-color -s java %U
+
+[Desktop Action linux]
+Name=Linux
+Icon=folder-linux
+Exec=dolphin-folder-color -s linux %U
+
+[Desktop Action locked]
+Name=Locked
+Name[it]=Lucchetto bloccato
+Icon=folder-locked
+Exec=dolphin-folder-color -s locked %U
+
+[Desktop Action mail]
+Name=Mail
+Icon=folder-mail
+Exec=dolphin-folder-color -s mail %U
+
+[Desktop Action mail-cloud]
+Name=Mail cloud
+Icon=folder-mail-cloud
+Exec=dolphin-folder-color -s mail-cloud %U
+
+[Desktop Action mega]
+Name=Mega
+Icon=folder-mega
+Exec=dolphin-folder-color -s mega %U
+
+[Desktop Action meocloud]
+Name=Meocloud
+Icon=folder-meocloud
+Exec=dolphin-folder-color -s meocloud %U
+
+[Desktop Action network]
+Name=Network
+Name[it]=Rete
+Icon=folder-network
+Exec=dolphin-folder-color -s network %U
+
+[Desktop Action owncloud]
+Name=Owncloud
+Icon=folder-owncloud
+Exec=dolphin-folder-color -s owncloud %U
+
+[Desktop Action print]
+Name=Print
+Name[it]=Stampa
+Icon=folder-print
+Exec=dolphin-folder-color -s print %U
+
+[Desktop Action private]
+Name=Private
+Name[it]=Privato
+Icon=folder-private
+Exec=dolphin-folder-color -s private %U
+
+[Desktop Action public]
+Name=Public
+Name[it]=Pubblico
+Icon=folder-public
+Exec=dolphin-folder-color -s public %U
+
+[Desktop Action recent]
+Name=Recent
+Name[it]=Recenti
+Icon=folder-recent
+Exec=dolphin-folder-color -s recent %U
+
+[Desktop Action remote]
+Name=Remote
+Name[it]=Remoto
+Icon=folder-remote
+Exec=dolphin-folder-color -s remote %U
+
+[Desktop Action script]
+Name=Script
+Icon=folder-script
+Exec=dolphin-folder-color -s script %U
+
+[Desktop Action steam]
+Name=Steam
+Icon=folder-steam
+Exec=dolphin-folder-color -s steam %U
+
+[Desktop Action tar]
+Name=Tar
+Icon=folder-tar
+Exec=dolphin-folder-color -s tar %U
+
+[Desktop Action templates]
+Name=Templates
+Name[it]=Modelli
+Icon=folder-templates
+Exec=dolphin-folder-color -s templates %U
+
+[Desktop Action unlocked]
+Name=Unlocked
+Name[it]=Lucchetto sbloccato
+Icon=folder-unlocked
+Exec=dolphin-folder-color -s unlocked %U
+
+[Desktop Action vbox]
+Name=VirtualBox
+Icon=folder-vbox
+Exec=dolphin-folder-color -s vbox %U
+
+[Desktop Action visiting]
+Name=Visiting
+Name[it]=In revisione
+Icon=folder-visiting
+Exec=dolphin-folder-color -s visiting %U
+
+[Desktop Action wifi]
+Name=Wifi
+Icon=folder-wifi
+Exec=dolphin-folder-color -s wifi %U
+
+[Desktop Action wine]
+Name=Wine
+Icon=folder-wine
+Exec=dolphin-folder-color -s wine %U
+
+[Desktop Action yandex-disk]
+Name=Yandex.Disk
+Icon=folder-yandex-disk
+Exec=dolphin-folder-color -s yandex-disk %U
